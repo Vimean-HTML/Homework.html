@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: rgba(245, 245, 235, 0.865);
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        td {
+            padding: 6px 10px;
+            text-align: left;
+            width: 100%;
+        }
+        input[type="text"], select, textarea {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        select {
+            width: 95%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        .label-row td {
+            padding-bottom: 2px;  
+        }
+        .input-row td {
+            padding-top: 0;       
+        }
+    </style>
+
+    <table>
+        <tr>
+            <td class="form-title">Contact Form</td>
+        </tr>
+        <tr class="label-row"><td>First Name:</td></tr>
+        <tr class="input-row">
+            <td><input type="text" placeholder="Your name.."></td>
+        </tr>
+        <tr class="label-row"><td>Last Name:</td></tr>
+        <tr class="input-row">
+            <td><input type="text" placeholder="Your last name.."></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option value="">-- Select Country --</option>
+                    <option value="kh">Cambodia</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="jp">Japan</option>
+                    <option value="cn">China</option>
+                    <option value="kr">South Korea</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="label-row"><td>Subject:</td></tr>
+        <tr class="input-row">
+            <td><textarea placeholder="Write something.." style="height:200px"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
