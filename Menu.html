@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        #she:hover {
+            background-color: rgb(6, 229, 21);
+        }
+        #she:hover td {
+            color: white;
+        }
+        #he{
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        #cat{
+            color: rgb(23, 22, 22);
+            text-align: center;
+        }
+        .dog{
+            color: rgb(16, 8, 8);
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .dog:hover {
+            background-color: rgb(18, 150, 232);
+        }
+    </style>
+    <table id="he">
+        <tr id="she">
+            <td>Home</td>
+        </tr>
+        <tr id="she">
+            <td>News</td>  
+        </tr>
+        <tr id="she">
+            <td>Contact</td>
+        </tr>
+        <tr id="she">
+            <td>About</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table id="cat">
+        <tr>
+            <td class="dog">Home</td>
+            <td class="dog">News</td>
+            <td class="dog">Contact</td>
+            <td class="dog" colspan="4" style="text-align: right;">About</td>
+        </tr>
+    </table>
+</body>
+</html>
